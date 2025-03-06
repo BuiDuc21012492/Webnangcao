@@ -5,11 +5,12 @@
 - Cung cấp giao diện trực quan, dễ sử dụng, vận hành trơn tru trên nhiều thiết bị.
 - Cho phép thành viên tự quản lý công việc cá nhân, giúp nâng cao hiệu suất làm việc.
 - Ghi lại nhật kí hoạt động
-### Usecase tổng quát
-![Image](https://github.com/user-attachments/assets/e6c89789-d165-4e8b-8af1-cd378297fb33)
 
 ### Sơ đồ chức năng
-![Image](https://github.com/user-attachments/assets/676fb7d7-a5da-4c50-845d-efba430f9c4a)
+![Image](https://github.com/user-attachments/assets/cecb0c0c-24d9-4209-a235-2a99878b44f3)
+
+### Usecase tổng quát
+![Image](https://github.com/user-attachments/assets/e6c89789-d165-4e8b-8af1-cd378297fb33)
 
 ### QL người dùng
 ![Image](https://github.com/user-attachments/assets/1ae05cae-fb42-4843-b172-d0997b2a54d4)
@@ -18,6 +19,7 @@
 ![Image](https://github.com/user-attachments/assets/ea51a998-b93a-47ef-9148-59cbaca0c211)
 
 ## Sơ đồ hoạt động
+
 ### Đăng kí
 
 ![Image](https://github.com/user-attachments/assets/52c994b7-c8b3-4afc-8662-f5f757c5936a)
@@ -52,6 +54,7 @@
 ![Image](https://github.com/user-attachments/assets/29ea5af7-d51d-44d5-8ff2-540caca901a1)
 
 ## Admin
+
 ### Quản lý thông tin
 
 ![Image](https://github.com/user-attachments/assets/c1568364-b287-41fa-a75a-886323044d47)
