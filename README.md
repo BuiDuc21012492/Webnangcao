@@ -4,7 +4,20 @@
 - Hỗ trợ admin trong việc quản lý thành viên, chức vụ và danh sách công việc.
 - Cung cấp giao diện trực quan, dễ sử dụng, vận hành trơn tru trên nhiều thiết bị.
 - Cho phép thành viên tự quản lý công việc cá nhân, giúp nâng cao hiệu suất làm việc.
-## Sơ đồ chức năng
+- Ghi lại nhật kí hoạt động
+### Usecase tổng quát
+![Image](https://github.com/user-attachments/assets/e6c89789-d165-4e8b-8af1-cd378297fb33)
+
+### Sơ đồ chức năng
+![Image](https://github.com/user-attachments/assets/676fb7d7-a5da-4c50-845d-efba430f9c4a)
+
+### QL người dùng
+![Image](https://github.com/user-attachments/assets/1ae05cae-fb42-4843-b172-d0997b2a54d4)
+
+## QL công việc
+![Image](https://github.com/user-attachments/assets/ea51a998-b93a-47ef-9148-59cbaca0c211)
+
+## Sơ đồ hoạt động
 ### Đăng kí
 
 ![Image](https://github.com/user-attachments/assets/52c994b7-c8b3-4afc-8662-f5f757c5936a)
