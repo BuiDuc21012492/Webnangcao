@@ -2,7 +2,7 @@
 **Link source code dự án**
 
 https://github.com/BuiDuc21012492/Webnangcao/tree/master
-## Mục tiêu
+# Mục tiêu
 - Xây dựng hệ thống quản lý công việc trực tuyến giúp tối ưu hóa quy trình làm việc.
 - Hỗ trợ admin trong việc quản lý thành viên, chức vụ và danh sách công việc.
 - Cung cấp giao diện trực quan, dễ sử dụng, vận hành trơn tru trên nhiều thiết bị.
@@ -15,11 +15,48 @@ https://github.com/BuiDuc21012492/Webnangcao/tree/master
 ### Usecase tổng quát
 ![Image](https://github.com/user-attachments/assets/e6c89789-d165-4e8b-8af1-cd378297fb33)
 
+## Mô tả usecase
+
 ### QL người dùng
 ![Image](https://github.com/user-attachments/assets/1ae05cae-fb42-4843-b172-d0997b2a54d4)
 
-## QL công việc
+**Actor: ADMIN**
+
+**Admin** thực hiện các chức năng: Đăng nhập, đăng xuất, thêm, xóa, sửa người dùng.
+
+**Người quản lý, nhân viên** có thể chỉnh sửa thông tin cá nhân, đổi mật khẩu.
+### Điều kiện tiên quyết:
+Actor phải đăng nhập thành công vào hệ thống để thực hiện các chức năng.
+### Kết quả:
+Thành công: Truy cập chức năng mong muốn.
+Thất bại: Hiển thị thông báo lỗi.
+### Luồng sự kiện chính:
+Extend Use Case: Đăng nhập, Đăng xuất, Đổi mật khẩu, Chỉnh sửa thông tin cá nhân.
+Admin: Thêm, Xóa, Sửa người dùng.
+### Luồng sự kiện phụ:
+Actor nhấn Thoát, hệ thống đóng màn hình chức năng đang dùng.
+
+### QL công việc
 ![Image](https://github.com/user-attachments/assets/ea51a998-b93a-47ef-9148-59cbaca0c211)
+
+**Actor: Quản lý**
+
+**Người quản lý** đăng nhập vào hệ thống để thực hiện các chức năng quản lý công việc.
+
+### Điều kiện trước:
+Đã đăng nhập thành công vào hệ thống.
+### Điều kiện sau:
+Thành công: Truy cập trang chức năng.
+Thất bại: Hiển thị thông báo “Đăng nhập không thành công”.
+### Luồng sự kiện chính:
+Chọn chức năng Quản lý công việc.
+### Thực hiện các thao tác:
+Thêm/Sửa/Xóa Công việc
+Thêm/Sửa/Xóa QA
+Thêm/Sửa/Xóa Điểm
+Thêm/Sửa/Xóa Đánh giá
+### Luồng sự kiện phụ:
+Nhấn nút Thoát, hệ thống hủy màn hình hiện tại.
 
 ## Sơ đồ hoạt động
 
@@ -39,33 +76,44 @@ https://github.com/BuiDuc21012492/Webnangcao/tree/master
 
 ![Image](https://github.com/user-attachments/assets/53308bdb-3805-4973-9ca5-c19d9e4904fd)
 
-## Giao diện
+# Giao diện
+
+## Nhân viên
+
 ### Đăng nhập
 
-![Image](https://github.com/user-attachments/assets/3ccb6d8a-156f-4217-950f-0832830a24fa)
+![Image](https://github.com/user-attachments/assets/d784e3c3-7ea1-47bc-9220-7562876d0622)
 
 ### Màn hình chính
 
-![Image](https://github.com/user-attachments/assets/6b23209f-325e-46ea-a1f6-3c674ba7edc7)
-
+![Image](https://github.com/user-attachments/assets/5a8cd666-176d-4212-b691-01d38a2ed406)
+ 
 ### Màn hình công việc
 
-![Image](https://github.com/user-attachments/assets/b4414b73-3178-419e-8596-f91f40702b67)
+![Image](https://github.com/user-attachments/assets/7aa24d57-d140-43f3-973c-93195063db5d)
 
 ### Thông tin chi tiết
 
-![Image](https://github.com/user-attachments/assets/29ea5af7-d51d-44d5-8ff2-540caca901a1)
+![Image](https://github.com/user-attachments/assets/a9b6c034-7dc8-4578-8b7d-4f3a73d2cd75)
 
 ## Admin
 
-### Quản lý thông tin
+### Danh sách nhân viên
 
-![Image](https://github.com/user-attachments/assets/c1568364-b287-41fa-a75a-886323044d47)
+![Image](https://github.com/user-attachments/assets/6d1c567c-d799-4a52-b97d-a01a3d505ff8)
 
 ### Sửa thông tin
 
-![Image](https://github.com/user-attachments/assets/192d5566-2b70-4153-9233-c5e3b3601096)
+![Image](https://github.com/user-attachments/assets/1761a188-07e9-407a-bc6d-0dc0eca22139)
+
+### Thêm nhân viên
+
+![Image](https://github.com/user-attachments/assets/ff120321-5fa8-40e2-991a-726cff924114)
+
+### Thêm đơn vị
+
+![Image](https://github.com/user-attachments/assets/7a9f4b11-b203-4afe-b5e0-683bbe232358)
 
 ### Quên mật khẩu
 
-![Image](https://github.com/user-attachments/assets/b45a2842-905e-4065-97ac-45dc61151ec1)
+![Image](https://github.com/user-attachments/assets/5feaa55c-81d6-470e-8860-fec46a51d104)
