@@ -10,7 +10,7 @@ https://github.com/BuiDuc21012492/Webnangcao/tree/master
 - Ghi lại nhật kí hoạt động
 
 ### Sơ đồ chức năng
-![Image](https://github.com/user-attachments/assets/cecb0c0c-24d9-4209-a235-2a99878b44f3)
+![Image](https://github.com/user-attachments/assets/17e42b18-db22-4e7d-a8c6-b731ed62f49e)
 
 ### Usecase tổng quát
 ![Image](https://github.com/user-attachments/assets/e6c89789-d165-4e8b-8af1-cd378297fb33)
