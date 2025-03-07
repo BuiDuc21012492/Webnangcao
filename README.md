@@ -1,61 +1,119 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Webnangcao
+**Link source code dự án**
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+https://github.com/BuiDuc21012492/Webnangcao/tree/master
+# Mục tiêu
+- Xây dựng hệ thống quản lý công việc trực tuyến giúp tối ưu hóa quy trình làm việc.
+- Hỗ trợ admin trong việc quản lý thành viên, chức vụ và danh sách công việc.
+- Cung cấp giao diện trực quan, dễ sử dụng, vận hành trơn tru trên nhiều thiết bị.
+- Cho phép thành viên tự quản lý công việc cá nhân, giúp nâng cao hiệu suất làm việc.
+- Ghi lại nhật kí hoạt động
 
-## About Laravel
+### Sơ đồ chức năng
+![Image](https://github.com/user-attachments/assets/17e42b18-db22-4e7d-a8c6-b731ed62f49e)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### Usecase tổng quát
+![Image](https://github.com/user-attachments/assets/e6c89789-d165-4e8b-8af1-cd378297fb33)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Mô tả usecase
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### QL người dùng
+![Image](https://github.com/user-attachments/assets/1ae05cae-fb42-4843-b172-d0997b2a54d4)
 
-## Learning Laravel
+**Actor: ADMIN**
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+**Admin** thực hiện các chức năng: Đăng nhập, đăng xuất, thêm, xóa, sửa người dùng.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+**Người quản lý, nhân viên** có thể chỉnh sửa thông tin cá nhân, đổi mật khẩu.
+### Điều kiện tiên quyết:
+Actor phải đăng nhập thành công vào hệ thống để thực hiện các chức năng.
+### Kết quả:
+Thành công: Truy cập chức năng mong muốn.
+Thất bại: Hiển thị thông báo lỗi.
+### Luồng sự kiện chính:
+Extend Use Case: Đăng nhập, Đăng xuất, Đổi mật khẩu, Chỉnh sửa thông tin cá nhân.
+Admin: Thêm, Xóa, Sửa người dùng.
+### Luồng sự kiện phụ:
+Actor nhấn Thoát, hệ thống đóng màn hình chức năng đang dùng.
 
-## Laravel Sponsors
+### QL công việc
+![Image](https://github.com/user-attachments/assets/ea51a998-b93a-47ef-9148-59cbaca0c211)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+**Actor: Quản lý**
 
-### Premium Partners
+**Người quản lý** đăng nhập vào hệ thống để thực hiện các chức năng quản lý công việc.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[OP.GG](https://op.gg)**
+### Điều kiện trước:
+Đã đăng nhập thành công vào hệ thống.
+### Điều kiện sau:
+Thành công: Truy cập trang chức năng.
+Thất bại: Hiển thị thông báo “Đăng nhập không thành công”.
+### Luồng sự kiện chính:
+Chọn chức năng Quản lý công việc.
+### Thực hiện các thao tác:
+Thêm/Sửa/Xóa Công việc
+Thêm/Sửa/Xóa QA
+Thêm/Sửa/Xóa Điểm
+Thêm/Sửa/Xóa Đánh giá
+### Luồng sự kiện phụ:
+Nhấn nút Thoát, hệ thống hủy màn hình hiện tại.
 
-## Contributing
+## Sơ đồ hoạt động
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Đăng kí
 
-## Code of Conduct
+![Image](https://github.com/user-attachments/assets/52c994b7-c8b3-4afc-8662-f5f757c5936a)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Đăng nhập
 
-## Security Vulnerabilities
+![Image](https://github.com/user-attachments/assets/d04082c6-144b-495e-b65c-480f4ad926fb)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### Quên mật khẩu
 
-## License
+![Image](https://github.com/user-attachments/assets/046bfdcd-c26c-4d47-8bb0-9beea7ce65fe)
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Quản lý tài khoản
+
+![Image](https://github.com/user-attachments/assets/53308bdb-3805-4973-9ca5-c19d9e4904fd)
+
+# Giao diện
+
+## Nhân viên
+
+### Đăng nhập
+
+![Image](https://github.com/user-attachments/assets/d784e3c3-7ea1-47bc-9220-7562876d0622)
+
+### Màn hình chính
+
+![Image](https://github.com/user-attachments/assets/5a8cd666-176d-4212-b691-01d38a2ed406)
+ 
+### Màn hình công việc
+
+![Image](https://github.com/user-attachments/assets/7aa24d57-d140-43f3-973c-93195063db5d)
+
+### Thông tin chi tiết
+
+![Image](https://github.com/user-attachments/assets/a9b6c034-7dc8-4578-8b7d-4f3a73d2cd75)
+
+## Admin
+
+### Danh sách nhân viên
+
+![Image](https://github.com/user-attachments/assets/6d1c567c-d799-4a52-b97d-a01a3d505ff8)
+
+### Sửa thông tin
+
+![Image](https://github.com/user-attachments/assets/1761a188-07e9-407a-bc6d-0dc0eca22139)
+
+### Thêm nhân viên
+
+![Image](https://github.com/user-attachments/assets/ff120321-5fa8-40e2-991a-726cff924114)
+
+### Thêm đơn vị
+
+![Image](https://github.com/user-attachments/assets/7a9f4b11-b203-4afe-b5e0-683bbe232358)
+
+### Quên mật khẩu
+
+![Image](https://github.com/user-attachments/assets/5feaa55c-81d6-470e-8860-fec46a51d104)
