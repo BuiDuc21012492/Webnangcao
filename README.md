@@ -1,5 +1,5 @@
 # Webnangcao
-**Link source code dự án**
+**Link source code dự án** ( Dự án chứa trong nhánh master )
 
 https://github.com/BuiDuc21012492/Webnangcao/tree/master
 # Mục tiêu
